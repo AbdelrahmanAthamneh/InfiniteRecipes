@@ -1,0 +1,36 @@
+.main-navigation {
+  width: 100vw;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(167, 135, 53),
+    rgb(255, 226, 62)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  margin-left: 3rem;
+}
+.logo-container img {
+  width: 20%;
+}
+
+.navigation-items {
+  list-style: none;
+  margin-right: 6rem;
+  color: black;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.navigation-items:hover {
+  background-color: #ececec;
+}
+.navigation-items:active {
+  background-color: #fafafa;
+}

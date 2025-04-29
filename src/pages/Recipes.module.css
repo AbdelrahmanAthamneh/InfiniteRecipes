@@ -1,0 +1,29 @@
+.selected {
+  font-weight: bold;
+  color: green;
+}
+
+.notSelected {
+  font-weight: normal;
+  color: red;
+}
+
+.recipesContent {
+  padding: 20px;
+}
+
+.recipe {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.recipeImage {
+  max-width: 200px;
+  border-radius: 5px;
+}
+
+.recipeTitle {
+  margin-top: 0;
+}

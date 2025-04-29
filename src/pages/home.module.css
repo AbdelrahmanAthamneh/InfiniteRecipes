@@ -1,0 +1,15 @@
+.home-content {
+  transition: opacity linear 0.5s;
+  text-align: center;
+  font-size: 2rem;
+}
+.home-content button {
+  margin-top: 2rem;
+  font-size: 3rem;
+  border: none;
+  background-color: #f5d83d;
+  border-radius: 20px;
+  font-family: inherit;
+  color: black;
+  cursor: pointer;
+}

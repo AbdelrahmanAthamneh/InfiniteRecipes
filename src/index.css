@@ -1,0 +1,19 @@
+@font-face {
+  font-family: quicksand;
+  src: url("./assets/quicksand.ttf");
+}
+
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: quicksand;
+  overflow-x: hidden;
+}
+
+.transparent {
+  opacity: 0;
+}
+.untransparent {
+  opacity: 100%;
+}
