@@ -1,15 +1,105 @@
 .home-content {
-  transition: opacity linear 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 70px);
+  padding: 2rem 1rem;
   text-align: center;
-  font-size: 2rem;
+  transition: opacity linear 0.5s;
 }
-.home-content button {
-  margin-top: 2rem;
-  font-size: 3rem;
+
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-icon-container {
+  background-color: var(--primary);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 20px rgba(247, 201, 72, 0.3);
+}
+
+.home-icon {
+  color: white;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #f7c948, #ffde59);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.home-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  color: var(--text-light);
+}
+
+.highlight {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.highlight-underline {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.home-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(to right, #f7c948, #ffde59);
+  color: var(--text);
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
   border: none;
-  background-color: #f5d83d;
-  border-radius: 20px;
-  font-family: inherit;
-  color: black;
+  border-radius: var(--radius-full);
   cursor: pointer;
+  box-shadow: 0 4px 10px rgba(247, 201, 72, 0.3);
+  transition: var(--transition);
+}
+
+.button-icon {
+  transition: transform 0.3s ease;
+}
+
+.home-button:hover .button-icon {
+  transform: translateX(4px);
+}
+
+@media (min-width: 640px) {
+  .home-title {
+    font-size: 3rem;
+  }
+
+  .home-description {
+    font-size: 1.5rem;
+  }
+
+  .home-button {
+    font-size: 1.5rem;
+    padding: 1rem 2.5rem;
+  }
 }
